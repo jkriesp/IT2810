@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Prosjekt 1</title>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".about").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="flex-container">
+            <div id="canvas">
+                <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+                </canvas>
+            </div>
+            <div id="svg">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <button>Documentation</button>
+    <div class="about" style="display: none">
+        <h2>Documentation</h2>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        
+        <h2>Sources</h2>
+        <ul>
+            <li>https://css-tricks.com/</li>
+            <li>https://www.w3schools.com</li>
+        </ul>
+    </div>
+ 
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
