@@ -1,17 +1,53 @@
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .flex-container {
-    display: flex;
-    background-color: DodgerBlue;
-    justify-content: center
-  }
+  display: flex;
+  background-color: DodgerBlue;
+  justify-content: center
+}
   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 
+.face {
+fill: gold;
+}
+
+.mouth {
+  fill: none;
+  stroke: #000;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  transform-origin: 102px 84px;
+  transition: all .5s linear;
+}
+
+.left-eyebrow {
+  transform: rotate(80deg);
+  transform-origin: 102px 84px;
+  transition: all .5s linear;
+}
+
+.right-eyebrow {
+  transform: rotate(100deg);
+  transform-origin: 158px 84px;
+  transition: all .5s linear;
+}
+
+.smiley:hover .left-eyebrow {
+  transform: rotate(100deg);
+}
+
+.smiley:hover .right-eyebrow {
+  transform: rotate(80deg);
+}
+
+.smiley:hover .mouth {
+  transform: rotate(-10deg);
+}
