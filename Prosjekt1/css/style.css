@@ -1,10 +1,26 @@
+body {
+  color:#333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+}
+
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+
+/* Flexbox design */
 .container {
   margin: 0 auto;
 }
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
   justify-content: center
 }
   
@@ -15,6 +31,27 @@
   font-size: 30px;
 }
 
+.container p {
+  display: inline-block;
+}
+
+.container p:last-child{
+  float: right;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background:  #888888;
+  color: white;
+  padding: 8px;
+}
+
+button:hover {
+  color: gold;
+}
+
+/* SVG  */
 .face {
 fill: gold;
 }
