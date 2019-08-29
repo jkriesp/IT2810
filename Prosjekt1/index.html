@@ -37,7 +37,6 @@
                         <path class="mouth" d="M102,160 Q130,190 158,160"></path>
                         <rect class="left-eyebrow" width="6" height="34" x="99" y="66" rx="6" ry="4"></rect>
                         <rect class="right-eyebrow" x="155" y="66" width="6" height="34" rx="4" ry="4"></rect>
-                        Sorry, your browser does not support inline SVG.
                     </svg>
                 </div>
 
@@ -54,25 +53,29 @@
         <h2>Documentation</h2>
 
         <h3>Css grid or Flexbox</h3>
-        <p>I decided to use Flexbox layout for the website. The design of the website is not complex and using flexbox I find it easier to align content within <div> containers. My take on CSS grid is that it’s more relevant to use if you’re implementing a two-dimensional website – A left aligned menu bellow a header for example. </p>
+        <p>I decided to use Flexbox layout for the website. The design of the website is not very complex and using flexbox, I find it easier to align content within &lt;div&gt; containers. My take on CSS grid is that it’s more relevant to use if you’re implementing a two-dimensional website – A left aligned menu bellow a header for example - which I'm not doing this time around. </p>
 
         <h3>HTML Canvas og SVG</h3>
         <p>In the above illustration I’ve tried to implement the same “abstract” smiley using SVG and HTML Canvas. There were several hurdles to overcome, one that I didn’t manage to solve. First the major difference between SVG and Canvas is that SVG uses HTML elements. That in turn makes it a lot more flexible to use CSS to design and animate. Canvas is just pixels, which in turn makes it harder to target specific shapes you want to animate or design. Animating the canvas shapes has to be done programmatically, which I didn’t manage to solve in time.</p>
 
-        <p>The SVG picture is animated using basic CSS animation.</p>
+        <p>The SVG picture is animated using basic CSS animation. Which I found quite straight forward, and easy to get started. If you hover on the smiley the mouth and eyebrows will animate.</p>
 
-        <p>Another hurdle I came across implementing the artwork using HTML canvas was in regard to colouring the elements. I managed to head of the smiley just fine, but when trying to colour each eye the entire face was filled with that colour. That leads me to believe that the eyes are not closed circles, and the fill-method does just that, fills the entire shape. </p>
+        <p>Another hurdle I came across implementing the artwork using HTML canvas was in regard to colouring the elements. I managed to colour the head of the smiley just fine, but when trying to colour each eye the entire face was filled with that colour. That leads me to believe that the eyes are not closed circles, and the fill-method does just that, fills the entire shape. </p>
+
+        <p>With that said I understand that although my HTML Canvas design looks "correct", the JavaScript code that generate it might not be entierely correct.</p>
 
         <h3>jQuery</h3>
-        <p>I’ve used jQuery to manage the “Documentation” toggle-button. I realize jQuery is a powerful library, but in this task, I didn’t find more use of it. I thought there might be use of it in regard to the canvas drawing, and found some alternatives, but I felt like the teaching goals wouldn’t be as clear if I didn’t try to implement the HTML canvas picture using regular HTML5. </p>
+        <p>I’ve used jQuery to manage the “Documentation” toggle-button. I realize jQuery is a powerful library and could be used more, but in this task, I didn’t find more areas of use for it. I thought there might be use of it in regard to the canvas drawing, and found some alternatives, but I felt like the teaching goals wouldn’t be as clear if I didn’t try to implement the HTML canvas picture using regular HTML5 and JavaScript. </p>
 
         <p>I did in turn find it easier to use jQuery to manipulate the DOM when my goal was to add a click listener to the toggle-button. Which I learned is the main goal of jQuery, easier and quicker DOM manipulation.</p>
 
         <h3>Cross browser testing</h3>
-        <p>I’ve tested the website on both Firefox and Chrome. Testing that it renders as expected in both browsers.</p>
+        <p>I’ve tested the website on both Firefox, Chrome and Safari. Testing that it renders as expected in both browsers. Also made sure that there's no console errors.</p>
+
+        <p>HTML validation using <a href="https://validator.w3.org/">validator.w3.org</a> was also done to ensure there was no basic mistakes hidden in the markup.</p>
 
         <h3>Re-used code and inspiration</h3>
-        <p>Sources for code is linked directly in the comments of the HTML and JS</p>
+        <p>Sources for code is linked directly in the comments of the HTML and JS. I've tried, as far as it goes, to use my own variable values so to make sure I'm understanding what exactly is happening when writing code based on examples and tutorials.</p>
 
         <h2>Sources</h2>
         <ul>

@@ -38,7 +38,7 @@ h1 {
 .container p:last-child{
   float: right;
 }
-
+/* Button style */
 button {
   cursor: pointer;
   border: 1px solid #888888;
